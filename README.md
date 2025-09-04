@@ -2,6 +2,8 @@
 
 Propósito de Aprendizaje 1: Comprender los fundamentos del desarrollo de aplicaciones web.
 
+<img width="292" height="173" alt="image" src="https://github.com/user-attachments/assets/5b8e8591-659a-4da6-9307-8673c150a2d1" />
+
 <ins> **1.-Introducción al desarrollo web** </ins>
 
 La introducción al desarrollo web abarca los conceptos básicos y la evolución histórica de cómo se crean y publican sitios y aplicaciones en internet. Se estudia cómo han surgido diferentes tecnologías y metodologías a lo largo del tiempo, desde las primeras páginas web estáticas hasta las aplicaciones web dinámicas y complejas que existen hoy en día.  
@@ -13,6 +15,7 @@ También se analizan los distintos tipos de aplicaciones web, como:
 - **PWA (Progressive Web App):** Aplicaciones web que ofrecen experiencias similares a las aplicaciones móviles, incluyendo el uso offline, notificaciones push y acceso desde la pantalla de inicio.
 
 Además, se explora cómo el desarrollo web ha impactado la vida cotidiana, permitiendo desde la consulta de información hasta la realización de compras, la comunicación en redes sociales y el acceso a servicios en la nube. Comprender estos conceptos es fundamental para entender la importancia y el alcance de las aplicaciones web en el mundo moderno, así como los retos y oportunidades que presenta su desarrollo.
+
 
 
 <ins> **2.Arquitectura de aplicaciones web** </ins>
@@ -79,7 +82,11 @@ En conjunto, Git, GitHub y las prácticas de ramificación y fusión de código 
 
 
 Propósito de Aprendizaje 2: Desarrollar componentes y funcionalidades de una aplicación web
-1.-Diseño e implementación del frontend
+
+<img width="294" height="171" alt="image" src="https://github.com/user-attachments/assets/3157d0f7-d482-48dd-9730-c11823e9394b" />
+
+<ins>**1.-Diseño e implementación del frontend**</ins>
+
 El **frontend** es la parte visible de una aplicación web, responsable de la experiencia del usuario.
 
 ## Maquetación, Wireframe y Mockup
@@ -93,7 +100,8 @@ El **frontend** es la parte visible de una aplicación web, responsable de la ex
 El frontend utiliza **APIs** para comunicarse con el backend, enviando y recibiendo datos mediante peticiones HTTP. Así, se integra información dinámica y funcionalidades en la interfaz.
 
 
-2.-Diseño e implementación del backend
+<ins>**2.-Diseño e implementación del backend**</ins>
+
 El backend es la parte de una aplicación web que se encarga de procesar la lógica, gestionar los datos y responder a las solicitudes del usuario desde el servidor. A continuación, se explican los conceptos clave en el diseño e implementación del backend:
 
 ### 1. Servidor
@@ -117,27 +125,123 @@ La conexión y gestión eficiente de las bases de datos es esencial para el corr
 En conjunto, estos elementos permiten que una aplicación web procese información, responda a las acciones de los usuarios y mantenga los datos organizados y accesibles.
 
 
-3.-Bases de datos
- Modelado de datos y relaciones
-ORM (Object Relational Mapping)
-CRUD desde el backend
-4.-Seguridad básica en aplicaciones web
-Validación de formularios
-Autenticación y autorización 
+<ins>**3.-Bases de datos**</ins>
+
+Las bases de datos son sistemas que almacenan, organizan y gestionan la información necesaria para una aplicación web.
+
+## Modelado de datos y relaciones
+
+**Modelado de datos:**
+
+  Proceso de definir cómo se estructuran los datos (tablas, campos) y cómo se relacionan entre sí.
+**Relaciones:**  
+  Las conexiones entre tablas pueden ser de uno a uno, uno a muchos o muchos a muchos, lo que permite organizar la información de forma eficiente y coherente.
+
+## ORM (Object Relational Mapping)
+
+El **ORM** es una técnica que conecta la base de datos relacional con los objetos del código, permitiendo trabajar con datos usando el lenguaje de programación sin escribir directamente consultas SQL.
+Ejemplos: SQLAlchemy (Python), Sequelize (Node.js), Eloquent (Laravel/PHP).
+
+## CRUD desde el backend
+
+**CRUD** significa **Crear, Leer, Actualizar y Borrar** registros en la base de datos.
+El backend implementa operaciones CRUD para gestionar los datos:  
+  - Crear: agregar nuevos registros  
+  - Leer: consultar información  
+  - Actualizar: modificar datos existentes  
+  - Borrar: eliminar registros
+Estas acciones se realizan normalmente mediante funciones o rutas en la API que interactúan con la base de datos.
+
+
+<ins>**4.-Seguridad básica en aplicaciones web**</ins>
+La seguridad es fundamental para proteger los datos y el funcionamiento de una aplicación web.
+
+## Validación de formularios
+
+Verifica que los datos ingresados por el usuario sean correctos y seguros antes de procesarlos.
+Evita ataques como la inyección de código o el envío de información inválida.
+
+## Autenticación y autorización
+
+**Autenticación:** Confirma la identidad del usuario (por ejemplo, mediante usuario y contraseña).
+**Autorización:** Determina qué acciones y recursos puede acceder cada usuario según su rol o permisos.
+
 
 Propósito de Aprendizaje 3: Implementar y desplegar una aplicación web funcional
-1. -Integración de frontend y backend
-Interfaz de usuario Frontend
-Manejo de API
-Proceso de Solicitud y Respuesta de Backend
 
-2.- Almacenamiento en Servidor
-Tipos de servidores 
-Servidores y servicios de hosting 
-Proveedores de Servicios de Almacenamiento
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/88baf15d-1b37-4863-80b7-f5a6d6434067" />
 
-3.-Optimización y rendimiento
-Optimización de recursos (imágenes, scripts)
-Despliegue de aplicaciones web
-CI/CD básico
-Documentación del proyecto
+<ins>**1. Integración de frontend y backend**</ins>
+
+La integración del frontend y backend permite que la aplicación web funcione como un sistema completo, conectando la interfaz de usuario con la lógica y los datos del servidor.
+
+## Interfaz de usuario Frontend
+La **interfaz de usuario** es la parte visual con la que interactúa el usuario. El frontend captura acciones y muestra información, usando tecnologías como HTML, CSS y JavaScript.
+
+## Manejo de API
+El frontend se comunica con el backend a través de **APIs** (normalmente REST), enviando solicitudes y recibiendo respuestas en formato JSON o similar. Esto permite obtener y mostrar datos dinámicos y realizar acciones como registros, búsquedas o actualizaciones.
+
+## Proceso de Solicitud y Respuesta de Backend
+Cuando el usuario realiza una acción (como enviar un formulario), el frontend envía una **solicitud** a la API del backend. El backend procesa la petición, accede a la base de datos si es necesario, y envía una **respuesta** al frontend, que actualiza la interfaz en función de los datos recibidos.
+
+
+<ins>**2. Almacenamiento en Servidor**</ins>
+
+El almacenamiento en servidor es fundamental para guardar archivos, datos y recursos de una aplicación web y hacerlos accesibles a los usuarios.
+
+## Tipos de servidores
+
+**Servidor dedicado:**  
+  Hardware exclusivo para una sola aplicación o cliente, ofrece mayor control y rendimiento.
+**Servidor compartido:**  
+  Varios usuarios comparten el mismo hardware, es más económico pero con recursos limitados.
+**Servidor virtual (VPS):**  
+  Simula varios servidores en una sola máquina física, combinando flexibilidad y coste moderado.
+**Servidor en la nube:**  
+  Recursos escalables y accesibles bajo demanda a través de Internet (ej.: AWS, Azure, Google Cloud).
+
+## Servidores y servicios de hosting
+
+**Hosting compartido:**  
+  Ideal para pequeños proyectos, muchos sitios comparten recursos de un mismo servidor.
+**Hosting dedicado:**  
+  Un servidor exclusivo para un solo cliente, recomendable para proyectos grandes.
+**Hosting VPS:**  
+  Ofrece aislamiento y control con precios intermedios.
+**Hosting en la nube:**  
+  Permite crecer fácilmente, pagando solo por lo que se usa.
+
+## Proveedores de Servicios de Almacenamiento
+
+**Amazon Web Services (AWS)**
+**Microsoft Azure**
+**Google Cloud Platform**
+**DigitalOcean**
+**Heroku**
+**Hostinger, GoDaddy, Bluehost** (hosting tradicional)
+
+Estos proveedores ofrecen diferentes opciones para almacenar archivos, bases de datos y recursos, adaptándose a las necesidades de cualquier proyecto web.
+
+<ins>**3. Optimización y rendimiento**</ins>
+
+Mejorar el rendimiento de una aplicación web es clave para una experiencia de usuario fluida y eficaz.
+
+## Optimización de recursos
+
+**Imágenes:** Usar formatos adecuados, comprimir y dimensionar correctamente para reducir el tiempo de carga.
+**Scripts:** Minimizar y combinar archivos JavaScript y CSS para reducir peticiones y mejorar la velocidad.
+
+## Despliegue de aplicaciones web
+
+Publicar la aplicación en un servidor o plataforma en la nube.
+Configurar el entorno para asegurar accesibilidad y seguridad.
+
+## CI/CD básico
+
+**CI/CD** (Integración y entrega continua) automatiza pruebas y despliegues.
+Permite detectar errores rápidamente y publicar nuevas versiones de forma ágil.
+
+## Documentación del proyecto
+
+Explica la estructura, configuración y uso del proyecto.
+Facilita la colaboración y el mantenimiento del software.
